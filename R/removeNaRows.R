@@ -1,11 +1,7 @@
-#' @title Remove rows with Na Values from dataframe
+#' Remove rows with Na Values from dataframe
 #'
-#' @description
 #' The function will remove all rows which contain na values.
 #' Specific columns can be cleaned whilst ignoring the other columns
-#' @usage
-#' removeNaRows(data)
-#' removeNaRows(data, c("A", "B", "C"))
 #' @param dataframe
 #' a dataframe
 #' @param applicableColumns
@@ -15,6 +11,7 @@
 #' removeNaRows(data)
 #' removeNaRows(read.csv("train.csv"))
 #' removeNaRows(data, c("A", "B", "C"))
+#' @export
 removeNaRows <- function(dataframe, applicableColumns=c()) {
   if (length(applicableColumns)==0) {
     isNa <- is.na(dataframe)

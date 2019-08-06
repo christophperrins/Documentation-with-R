@@ -4,8 +4,7 @@
 \alias{removeNaRows}
 \title{Remove rows with Na Values from dataframe}
 \usage{
-removeNaRows(data)
-removeNaRows(data, c("A", "B", "C"))
+removeNaRows(dataframe, applicableColumns = c())
 }
 \arguments{
 \item{dataframe}{a dataframe}

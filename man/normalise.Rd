@@ -13,7 +13,7 @@ normalise(x)
 a vector of normalised values
 }
 \description{
-Normalise data
+The function is built to normalise a vector of numbers.
 }
 \examples{
 normalise(c(1:5))
